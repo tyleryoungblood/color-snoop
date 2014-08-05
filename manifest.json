@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 
-	"name": "background-colorpeek",
+	"name": "Bg Color Snoop",
 	"version": "1.0",
 	"description": "Get every background-color from the current tab.", 
 
