@@ -19,10 +19,20 @@ function getBgColors (tab) {
   		alert('No background colors were found! Odd.');
   	}
   	return true;
-  })
+  });
 
 }
 
 // When the browser action is clicked, call the
 // getBgColors function.
-chrome.browserAction.onClicked.addListener(getBgColors);
+//chrome.browserAction.onClicked.addListener(getBgColors);
+
+
+function test() {
+  window.alert("hi");
+  return true;
+}
+
+
+var currPage = document.getElementById("current-page");
+currPage.addEventListener("click", getBgColors, false);

@@ -1,12 +1,13 @@
 {
 	"manifest_version": 2,
 
-	"name": "Bg Color Snoop",
+	"name": "Color Snoop",
 	"version": "1.0",
 	"description": "Get every background-color from the current tab.", 
 
 	"browser_action": {
-		"default_icon": "icon19.png"
+		"default_icon": "icon19.png",
+		"default_popup": "popup.html"
 	}, 
 
 	"background": {
@@ -14,5 +15,13 @@
 		"persistent": false
 	}, 
 
-	"permissions": ["<all_urls>"]
+	"content_scripts": [ 
+	{
+		"matches": ["<all_urls>"],
+		"css": ["styles.css"]
+	}],
+
+	"permissions": ["<all_urls>",
+	 				"contextMenus",
+	 				"tabs"]
 }

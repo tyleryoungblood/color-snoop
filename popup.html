@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+
+  </head>
+  <body>
+    <ul>
+      <li class="center">View Palette:</li><hr>
+      <li><a href="http://colorpeek.com/#265b80,8394a1,5b7183,688465,67a14c,e0ddce" target="_blank">Colonial Life</a></li>
+      <li><a href="http://colorpeek.com/#00a6d7,05abb1,8dc24b,eb9400,333333,e6edf3" target="_blank">Unum US</a></li>
+      <li><a href="http://colorpeek.com/#4fb449,00a6d7,333333,e6edf3" target="_blank">Unum Global</a></li><hr>
+      <li><a id="current-page">Current Page</a></li>
+    </ul>
+
+
+    <script src="inject.js"></script>
+    <script src="event.js"></script>
+  </body>
+</html>
